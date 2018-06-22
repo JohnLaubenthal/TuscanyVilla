@@ -1,2 +1,154 @@
-﻿
+﻿.container{
+    display:grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows:50px repeat(18, 150px) 110px repeat(3, 150px) 185px;
+    margin: 2rem auto;
+    max-width: 1336px;
+
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    padding-right: 15px;
+}
+
+#navbartext{
+    padding-right: 10px;
+}
+
+#logo {
+   
+    padding-left: 15px;
+}
+
+nav {
+    grid-column: 1 / span 6;
+    display: flex;
+    background-color: #474E5D;
+    justify-content:space-between;
+    align-items:center;
+    
+    
+}
+
+header {
+    grid-column: 1 / span 6;
+    grid-row:  2 / span 2;
+    background-color:blue;
+}
+locations {
+    grid-column: 1 / span 6;
+    grid-row: 4;
+    background-color:burlywood;
+}
+
+locationone {
+    grid-column: 1/ span 6;
+    grid-row: 5 / span 2;
+    background-color:coral;
+}
+
+locationtwo {
+    grid-column: 1 / span 6;
+    grid-row: 7/ span 2;
+    background-color:aqua;
+}
+
+locationthree{
+    grid-column: 1 / span 6;
+    grid-row: 9 / span 2;
+    background-color:cornflowerblue;
+
+}
+amenities{
+    grid-column: 1 / span 6;
+    grid-row: 11;
+    background-color:greenyellow;
+}
+
+receptions {
+    grid-column: 1 / span 2;
+    grid-row: 12 / span 2;
+    background-color:cadetblue;
+}
+
+occasion {
+    grid-column: 3 / span 2;
+    grid-row: 12 / span 2;
+    background-color:brown;
+}
+
+pool {
+    grid-column: 5 / span 2;
+    grid-row: 12 / span 2;
+    background-color:blue;
+}
+
+setsapart {
+    grid-column: 1 / span 2;
+    grid-row: 14 / span 2;
+    background-color:chartreuse;
+}
+
+likehome {
+    grid-column: 3 / span 2;
+    grid-row: 14 / span 2;
+    background-color:aqua;
+}
+
+staff {
+    grid-column: 5 / span 2;
+    grid-row: 14 / span 2;
+    background-color:black;
+}
+
+views {
+    grid-column: 1 / span 2;
+    grid-row: 16 / span 2;
+    background-color:darkgrey;
+
+}
+
+book {
+    grid-column: 3 / span 2;
+    grid-row: 16 / span 2;
+    background-color:darkorange;
+}
+
+private {
+    grid-column: 5 / span 2;
+    grid-row: 16 / span 2;
+    background-color:darkolivegreen;
+}
+
+reviews {
+    grid-column: 1 / span 6;
+    grid-row: 18;
+    background-color:blue;
+}
+
+carousel {
+    grid-column: 1 / span 6;
+    grid-row: 19 / span 2;
+    background-color:brown;
+}
+
+contact {
+    grid-column: 1 / span 6;
+    grid-row: 21;
+    background-color:chartreuse;
+}
+
+contactus {
+    grid-column: 1 / span 6;
+    grid-row: 22 / span 2;
+    background-color:aqua;
+}
+
+footer {
+    grid-column: 1 / span 6;
+    grid-row: 24;
+    background-color:brown;
+}
 
