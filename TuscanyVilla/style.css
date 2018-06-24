@@ -1,7 +1,7 @@
 ﻿.container{
     display:grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows:50px repeat(18, 150px) 110px repeat(3, 150px) 185px;
+    grid-template-rows:40px 230px repeat(17, 150px) 110px repeat(3, 150px) 185px;
     margin: 2rem auto;
     max-width: 1336px;
 
@@ -32,85 +32,188 @@ nav {
     
 }
 
-header {
-    grid-column: 1 / span 6;
-    grid-row:  2 / span 2;
-    background-color:blue;
+.header {
+    grid-column: 1 / span 5;
+    grid-row: 2 / span 2;
+    display: flex;
+    background-image: url('images/images/tuscany-villas-sant-anna.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+    color: snow;
+    align-items:center;
+    text-decoration:none;
+    font-size: 10px;
+    margin: 5px;
+    position: relative;
+
+
+    
 }
-locations {
+
+.sidebar {
+    grid-column: 6 / span 1;
+    grid-row: 2 / span 2;
+    display:flex;
+    background-image: url('images/images/Versilia.jpg');
+    background-size: cover;
+    background-position:center;
+}
+a {
+    color: white;
+    text-decoration: none;
+    padding-right: 10px;
+    text-align:center;
+    font-family:'Cambria Math';
+        
+}
+
+.locations {
     grid-column: 1 / span 6;
     grid-row: 4;
-    background-color:burlywood;
+    background-color: #474E5D;
+    display:flex;
+    justify-content:center;
+    color: white;  
+}
+section.locations h1 {
+    display:flex;
+    color:snow;
+    font-size: 25px;
+    margin-left:555px;
+    margin-bottom:0px;
+    align-items:center;
+    padding-bottom: 30px;
+}
+section.locations p {
+    color:snow;
+    font-size: 15px;
+    margin-right: 555px;
+    text-align:center;
+    align-items:center;
+    align-content:space-around;
+    padding-top: 80px;
+
+
 }
 
-locationone {
+.locationone {
     grid-column: 1/ span 6;
     grid-row: 5 / span 2;
-    background-color:coral;
+    background-color: snow;
+    display:flex;
+    align-items:center;
+
+.locationone h1{
+                 color :black;
+                font-size: 25px;
+                margin-left: 20px;
+                 margin-bottom: 10px;
+                 text-align:center;
+                 display:flex;
+                 align-items: flex-start;
+                 text-overflow:unset;
+                }
+ 
+.locationone p{
+                   color: black;
+                   font-size: 10px;
+                   margin-left: 20px;
+                   text-overflow: ellipsis;
+                   text-align: center;
+                   display: flex;
+                
+
+               }
+
+}
+.locationonephoto {
+    grid-column: 5 / span 2;
+    grid-row: 5 / span 2;
+    display:flex;
+    background-image: url('images/images/italy-mountain-villa.jpeg');
+    background-size: cover;
+    background-position:right;
+    margin-top:40px;
+    margin-bottom: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
-locationtwo {
+
+
+.locationtwo {
     grid-column: 1 / span 6;
     grid-row: 7/ span 2;
     background-color:aqua;
+    display:flex;
+    justify-content:flex-end;
 }
 
-locationthree{
+.locationtwophoto {
+    background-image: url('images/images/modern-villa.jpeg');
+    background-position:left;
+    background-size:cover;
+    
+}
+
+.locationthree{
     grid-column: 1 / span 6;
     grid-row: 9 / span 2;
     background-color:cornflowerblue;
 
 }
-amenities{
+
+.amenities{
     grid-column: 1 / span 6;
     grid-row: 11;
     background-color:greenyellow;
 }
 
-receptions {
+.receptions {
     grid-column: 1 / span 2;
     grid-row: 12 / span 2;
     background-color:cadetblue;
 }
 
-occasion {
+.occasion {
     grid-column: 3 / span 2;
     grid-row: 12 / span 2;
     background-color:brown;
 }
 
-pool {
+.pool {
     grid-column: 5 / span 2;
     grid-row: 12 / span 2;
     background-color:blue;
 }
 
-setsapart {
+.setsapart {
     grid-column: 1 / span 2;
     grid-row: 14 / span 2;
     background-color:chartreuse;
 }
 
-likehome {
+.likehome {
     grid-column: 3 / span 2;
     grid-row: 14 / span 2;
     background-color:aqua;
 }
 
-staff {
+.staff {
     grid-column: 5 / span 2;
     grid-row: 14 / span 2;
     background-color:black;
 }
 
-views {
+.views {
     grid-column: 1 / span 2;
     grid-row: 16 / span 2;
     background-color:darkgrey;
 
 }
 
-book {
+.book {
     grid-column: 3 / span 2;
     grid-row: 16 / span 2;
     background-color:darkorange;
@@ -122,31 +225,31 @@ private {
     background-color:darkolivegreen;
 }
 
-reviews {
+.reviews {
     grid-column: 1 / span 6;
     grid-row: 18;
     background-color:blue;
 }
 
-carousel {
+.carousel {
     grid-column: 1 / span 6;
     grid-row: 19 / span 2;
     background-color:brown;
 }
 
-contact {
+.contact {
     grid-column: 1 / span 6;
     grid-row: 21;
     background-color:chartreuse;
 }
 
-contactus {
+.contactus {
     grid-column: 1 / span 6;
     grid-row: 22 / span 2;
     background-color:aqua;
 }
 
-footer {
+.footer {
     grid-column: 1 / span 6;
     grid-row: 24;
     background-color:brown;
